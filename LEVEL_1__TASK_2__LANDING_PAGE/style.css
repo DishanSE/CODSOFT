@@ -12,6 +12,10 @@ body {
   overflow-x: hidden;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 .container {
   max-width: 1200px;
   margin: 0 auto;
@@ -36,7 +40,7 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 20px 0;
+  padding: 20px 5px;
 }
 
 .logo {
@@ -84,60 +88,70 @@ nav {
 
 /* Home Section */
 #home {
-  height: 100vh;
-  display: flex;
-  align-items: center;
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-  color: #fff;
-  overflow: hidden;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: #fff;
+    padding: 100px 0;
+}
+
+#home .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
 .hero-content {
-  flex: 1;
-  padding-right: 50px;
+    flex: 1;
+    padding-right: 50px;
 }
 
 .hero-content h1 {
-  font-size: 48px;
-  font-weight: 700;
-  margin-bottom: 20px;
-  animation: fadeInUp 1s ease;
+    font-size: 48px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    animation: fadeInUp 1s ease;
 }
 
 .hero-content p {
-  font-size: 18px;
-  margin-bottom: 30px;
-  animation: fadeInUp 1s ease 0.2s;
-  animation-fill-mode: both;
+    font-size: 18px;
+    margin-bottom: 30px;
+    animation: fadeInUp 1s ease 0.2s;
+    animation-fill-mode: both;
 }
 
 .cta-button {
-  display: inline-block;
-  padding: 12px 30px;
-  background-color: #3498db;
-  color: #fff;
-  text-decoration: none;
-  border-radius: 30px;
-  font-weight: 600;
-  transition: background-color 0.3s ease, transform 0.3s ease;
-  animation: fadeInUp 1s ease 0.4s;
-  animation-fill-mode: both;
+    display: inline-block;
+    padding: 12px 30px;
+    background-color: #3498db;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 30px;
+    font-weight: 600;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    animation: fadeInUp 1s ease 0.4s;
+    animation-fill-mode: both;
 }
 
 .cta-button:hover {
-  background-color: #2980b9;
-  transform: translateY(-3px);
+    background-color: #2980b9;
+    transform: translateY(-3px);
 }
 
 .hero-image {
-  flex: 1;
-  animation: floatImage 3s ease-in-out infinite;
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: floatImage 3s ease-in-out infinite;
 }
 
 .hero-image img {
-  max-width: 100%;
-  border-radius: 10px;
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 }
 
 /* Features Section */
