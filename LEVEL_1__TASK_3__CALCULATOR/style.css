@@ -20,6 +20,10 @@ body {
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
 }
 
+.calculator h1{
+  color: #f0f0f0;
+}
+
 .display {
   margin-bottom: 20px;
 }
@@ -73,13 +77,22 @@ button:active {
   background-color: #ffab40;
 }
 
+.operator:active {
+  background-color: #fcbe6c;
+}
+
 .equals {
   background-color: #4caf50;
+  grid-column: 3 span;
   color: #fff;
 }
 
 .equals:hover {
   background-color: #45a049;
+}
+
+.equals:active {
+  background-color: #65c56a;
 }
 
 .clear {
@@ -91,6 +104,10 @@ button:active {
   background-color: #e53935;
 }
 
+.clear:hover {
+  background-color: #db5855;
+}
+
 .decimal {
   background-color: #555;
   color: #fff;
@@ -98,6 +115,10 @@ button:active {
 
 .decimal:hover {
   background-color: #666;
+}
+
+.decimal:hover {
+  background-color: #9a9797;
 }
 
 .zero {
