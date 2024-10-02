@@ -3,89 +3,125 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TechBuzz Landing Page</title>
+    <title>TechBuzz - Stay Ahead in Tech</title>
     <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
     <header>
-        <nav>
+        <nav class="container">
             <div class="logo">Tech<span>Buzz</span></div>
             <ul class="nav-links">
                 <li><a href="#home">Home</a></li>
                 <li><a href="#features">Features</a></li>
-                <li><a href="#about">About</a></li>
+                <li><a href="#testimonials">Testimonials</a></li>
+                <li><a href="#pricing">Pricing</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
-            <div class="burger">
-                <div class="line1"></div>
-                <div class="line2"></div>
-                <div class="line3"></div>
-            </div>
+            <div class="menu-toggle">☰</div>
         </nav>
     </header>
 
     <main>
-        <section id="home">
+        <section id="home" class="hero">
             <div class="container">
-                <div class="hero-content">
-                    <h1>Welcome to the Future</h1>
-                    <p>Experience innovation like never before with our cutting-edge solutions.</p>
-                    <a href="#" class="cta-button">Get Started</a>
-                </div>
-                <div class="hero-image">
-                    <img src="img/hero_img.jpg" alt="Hero Image">
-                </div>
+                <h1>Stay Ahead in Tech with TechBuzz</h1>
+                <p>Discover the latest tech trends, news, and innovations all in one place.</p>
+                <a href="#contact" class="cta-button">Get Started</a>
             </div>
         </section>
 
-        <section id="features">
+        <section id="features" class="features">
             <div class="container">
-                <h2>Our Features</h2>
+                <h2>Why Choose TechBuzz?</h2>
                 <div class="feature-grid">
-                    <div class="feature-card">
-                        <i class="fas fa-rocket"></i>
-                        <h3>Fast Performance</h3>
-                        <p>Lightning-fast loading times for optimal user experience.</p>
+                    <div class="feature-item">
+                        <img src="img/latest-news.jpg" alt="Latest News">
+                        <h3>Latest News</h3>
+                        <p>Stay informed with up-to-the-minute tech news from around the world.</p>
                     </div>
-                    <div class="feature-card">
-                        <i class="fas fa-shield-alt"></i>
-                        <h3>Secure & Reliable</h3>
-                        <p>Your data is protected with state-of-the-art security measures.</p>
+                    <div class="feature-item">
+                        <img src="img/expert-analysis.avif" alt="Expert Analysis">
+                        <h3>Expert Analysis</h3>
+                        <p>Get insights from industry experts on emerging technologies and trends.</p>
                     </div>
-                    <div class="feature-card">
-                        <i class="fas fa-users"></i>
-                        <h3>User-Friendly</h3>
-                        <p>Intuitive interface designed for users of all skill levels.</p>
+                    <div class="feature-item">
+                        <img src="img/community.jpg" alt="Community">
+                        <h3>Vibrant Community</h3>
+                        <p>Connect with like-minded tech enthusiasts and share your thoughts.</p>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section id="about">
+        <section id="testimonials" class="testimonials">
             <div class="container">
-                <div class="about-content">
-                    <div class="about-text">
-                        <h2>About Us</h2>
-                        <p>We are a team of passionate innovators dedicated to creating solutions that make a difference. Our mission is to empower businesses and individuals with cutting-edge technology.</p>
-                        <a href="#" class="learn-more">Learn More</a>
+                <h2>What Our Users Say</h2>
+                <div class="testimonial-grid">
+                    <div class="testimonial-item">
+                        <p>"TechBuzz has become my go-to source for all things tech. The content is always fresh and insightful!"</p>
+                        <div class="testimonial-author">- Sarah J., Software Developer</div>
                     </div>
-                    <div class="about-image">
-                        <img src="img/about_us.jpg" alt="About Us">
+                    <div class="testimonial-item">
+                        <p>"I love the community aspect of TechBuzz. It's great to connect with other tech enthusiasts and share ideas."</p>
+                        <div class="testimonial-author">- Mike T., IT Manager</div>
+                    </div>
+                    <div class="testimonial-item">
+                        <p>"The expert analysis on TechBuzz has helped me make informed decisions for my startup. Invaluable resource!"</p>
+                        <div class="testimonial-author">- Lisa R., Entrepreneur</div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section id="contact">
+        <section id="pricing" class="pricing">
+            <div class="container">
+                <h2>Choose Your Plan</h2>
+                <div class="pricing-grid">
+                    <div class="pricing-item">
+                        <h3>Basic</h3>
+                        <div class="price">$9.99/mo</div>
+                        <ul>
+                            <li>Access to all articles</li>
+                            <li>Daily newsletter</li>
+                            <li>Community forum access</li>
+                        </ul>
+                        <a href="#" class="cta-button">Select Plan</a>
+                    </div>
+                    <div class="pricing-item featured">
+                        <h3>Pro</h3>
+                        <div class="price">$19.99/mo</div>
+                        <ul>
+                            <li>All Basic features</li>
+                            <li>Exclusive webinars</li>
+                            <li>Ad-free experience</li>
+                            <li>Priority support</li>
+                        </ul>
+                        <a href="#" class="cta-button">Select Plan</a>
+                    </div>
+                    <div class="pricing-item">
+                        <h3>Enterprise</h3>
+                        <div class="price">Contact Us</div>
+                        <ul>
+                            <li>All Pro features</li>
+                            <li>Custom solutions</li>
+                            <li>Dedicated account manager</li>
+                            <li>API access</li>
+                        </ul>
+                        <a href="#" class="cta-button">Contact Sales</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="contact">
             <div class="container">
                 <h2>Get in Touch</h2>
                 <form class="contact-form">
                     <input type="text" placeholder="Your Name" required>
                     <input type="email" placeholder="Your Email" required>
                     <textarea placeholder="Your Message" required></textarea>
-                    <button type="submit">Send Message</button>
+                    <button type="submit" class="cta-button">Send Message</button>
                 </form>
             </div>
         </section>
@@ -94,17 +130,34 @@
     <footer>
         <div class="container">
             <div class="footer-content">
-                <div class="footer-logo">Brand<span>Name</span></div>
-                <div class="social-links">
-                    <a href="#"><i class="fa-brands fa-facebook"></i></a>
-                    <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
-                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
-                    <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                <div class="footer-section">
+                    <h4>About TechBuzz</h4>
+                    <p>TechBuzz is your one-stop destination for the latest in technology news, trends, and insights.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#features">Features</a></li>
+                        <li><a href="#testimonials">Testimonials</a></li>
+                        <li><a href="#pricing">Pricing</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Connect With Us</h4>
+                    <div class="social-icons">
+                        <a href="#" class="social-icon"><i class="fa-brands fa-facebook-f"></i></i></a>
+                        <a href="#" class="social-icon"><i class="fa-brands fa-x-twitter"></i></a>
+                        <a href="#" class="social-icon"><i class="fa-brands fa-linkedin-in"></i></a>
+                        <a href="#" class="social-icon"><i class="fa-brands fa-instagram"></i></a>
+                    </div>
                 </div>
             </div>
-            <p>&copy; 2024 TechBuzz. All rights reserved.</p>
+            <div class="footer-bottom">
+                <p>&copy; 2024 TechBuzz. All rights reserved.</p>
+            </div>
         </div>
     </footer>
-
 </body>
 </html>
